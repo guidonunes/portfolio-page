@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dark {
+  background-color: #171717;
+  color: #e0e0e0;
+}
+
+/* Customize hero section for dark mode */
+body.dark .hero-section {
+  background-color: #171717; /* Dark background for the hero section */
+  color: #e0e0e0; /* Lighter text for the hero section */
+}
+
+body.dark .hero-section h3,
+body.dark .hero-section h5 {
+  color: #e0e0e0; /* Light color for heading and subtitle */
+}
+
+body.dark .hero-section .text-indigo-700 {
+  color: #bb86fc; /* Light purple color for the text to stand out */
+}
+
+body.dark .hero-section .bg-indigo-700 {
+  background-color: #6200ee; /* Darker indigo button for dark mode */
+}
+
+body.dark .hero-section .bg-indigo-700:hover {
+  background-color: #3700b3; /* Darker hover state for the button */
+}
