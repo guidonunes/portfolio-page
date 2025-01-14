@@ -5,6 +5,7 @@ import Image from "next/image";
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { FaMoon, FaSun } from "react-icons/fa";
+import './animations.css';
 
 
 export const Header = () => {
@@ -44,7 +45,7 @@ export const Header = () => {
 
   return (
     <div>
-      <nav className="fixed top-0  w-full dark:bg-gray-900  z-50">
+      <nav className="fixed top-0  w-full dark:bg-gray-900  z-50 flicker-in-1">
   <div className="container mx-auto">
     <div className="w-full flex flex-col lg:flex-row">
       <div className="flex justify-between lg:flex-row mx-8">

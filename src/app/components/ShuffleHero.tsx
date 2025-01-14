@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import './animations.css';
+
 
 const ShuffleHero = () => {
   const { t } = useTranslation();
@@ -15,18 +17,18 @@ const ShuffleHero = () => {
           "radial-gradient(125% 125% at 50% 10%, #fff 40%, #63e 100%)",
       }}
     >
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-6 max-w-6xl mx-auto text-black dark:text-gray-200">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-6 max-w-6xl mx-auto text-black dark:text-gray-200 pt-16">
         <div className="text-center md:text-left flex flex-col items-center md:items-start">
-          <span className="block mb-3 text-xs md:text-sm text-indigo-700 dark:text-orange-500 font-medium">
+          <span className="block mb-3 text-xs md:text-sm text-indigo-700 dark:text-orange-500 font-medium bounce-in-top">
             {t("tagline")}
           </span>
-          <h3 className="text-4xl sm:text-5xl md:text-5xl font-semibold leading-tight">
+          <h3 className="text-4xl sm:text-5xl md:text-5xl font-semibold leading-tight bounce-in-left">
             {t("greeting")}
           </h3>
-          <h5 className="text-2xl sm:text-xl md:text-2xl text-slate-700 dark:text-gray-300 my-3 md:my-5 pb-4">
+          <h5 className="text-2xl sm:text-xl md:text-2xl text-slate-700 dark:text-gray-300 my-3 md:my-5 pb-4 bounce-in-bottom">
             {t("subtitle")}
           </h5>
-          <button className="bg-indigo-700 dark:bg-orange-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 dark:hover:bg-orange-800 active:scale-95 mb-4">
+          <button className="bg-indigo-700 dark:bg-orange-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 dark:hover:bg-orange-800 active:scale-95 mb-4 ">
             {t("buttonText")}
           </button>
         </div>
