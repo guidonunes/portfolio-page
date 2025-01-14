@@ -6,6 +6,7 @@ import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { FaMoon, FaSun } from "react-icons/fa";
 
+
 export const Header = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
@@ -32,18 +33,18 @@ export const Header = () => {
   };
 
   useEffect(() => {
-    const body = document.body;
+    const root = document.documentElement;
     if (isDarkMode) {
-      body.classList.add('dark');
+      root.classList.add('dark');
     } else {
-      body.classList.remove('dark');
+      root.classList.remove('dark');
     }
   }, [isDarkMode]);
 
 
   return (
     <div>
-      <nav className="fixed top-0 border-solid border-gray-700 w-full border-b bg-white dark:bg-gray-800 z-50">
+      <nav className="fixed top-0  w-full dark:bg-gray-900  z-50">
   <div className="container mx-auto">
     <div className="w-full flex flex-col lg:flex-row">
       <div className="flex justify-between lg:flex-row mx-8">
@@ -80,7 +81,7 @@ export const Header = () => {
           <li>
             <a
               href="javascript:;"
-              className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-indigo-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+              className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-orange-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
             >
               {t("home")}
             </a>
@@ -88,7 +89,7 @@ export const Header = () => {
           <li>
             <a
               href="javascript:;"
-              className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-indigo-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+              className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-orange-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
             >
               {t("aboutUs")}
             </a>
@@ -96,7 +97,7 @@ export const Header = () => {
           <li>
             <a
               href="javascript:;"
-              className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-indigo-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+              className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-orange-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
             >
               {t("projects")}
             </a>
@@ -104,7 +105,7 @@ export const Header = () => {
           <li>
             <a
               href="javascript:;"
-              className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-indigo-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+              className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-orange-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
             >
               {t("contact")}
             </a>
@@ -112,7 +113,7 @@ export const Header = () => {
 
           <div className="relative">
             <button
-              className="flex items-center p-2 border rounded-lg text-gray-500 dark:text-gray-300 text-sm"
+              className="flex items-center p-2 px-3 border rounded-lg text-gray-500 dark:text-gray-300 text-sm"
               onClick={toggleDropdown} // Use toggleDropdown to show/hide the dropdown
             >
               <Image

@@ -7,7 +7,7 @@ export default function Home() {
       <header className="w-full bg-gray-100 shadow-md">
         <Header />
       </header>
-      <main className="mt-16 p-16 flex justify-center items-center">
+      <main className="mt-16  flex justify-center items-center">
         <ShuffleHero />
       </main>
     </div>
