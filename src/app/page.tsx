@@ -1,6 +1,7 @@
 
 import { Header } from "./components/Header";
 import ShuffleHero from "./components/ShuffleHero";
+import About from "./components/About";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </header>
       <main className="mt-16 flex flex-col items-center">
         <ShuffleHero />
+        <About />
       </main>
     </>
   );

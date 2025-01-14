@@ -23,8 +23,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" className="dark z-99"> {/* Add "dark" class if the user has dark mode enabled */}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          background: "radial-gradient(125% 125% at 50% 10%, #fff 40%, #63e 100%)",
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+        }}
+      >
         {/* Use Head to inject metadata into the document head */}
         <Head>
           <title>{metadata.title}</title>
@@ -34,6 +41,21 @@ export default function RootLayout({
           {children}
         </I18nextProvider>
       </body>
+
+      {/* Apply dark mode background styles */}
+      <style jsx global>{`
+        .dark body {
+          background: radial-gradient(125% 125% at 50% 10%, #000 40%, #5f5f5f 100%);
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        /* Ensures light mode retains original background */
+        body {
+          background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #63e 100%);
+          background-attachment: fixed;
+          background-size: cover;
+        }
+      `}</style>
     </html>
   );
 }
