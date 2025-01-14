@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import "./animations.css";
+import "../animations.css";
 
 const ShuffleHero = () => {
   const { t } = useTranslation();

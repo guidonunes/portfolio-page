@@ -5,7 +5,7 @@ import Image from "next/image";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import { FaMoon, FaSun } from "react-icons/fa";
-import "./animations.css";
+import "../animations.css";
 
 export const Header = () => {
   const { t } = useTranslation();

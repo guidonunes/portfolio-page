@@ -10,7 +10,6 @@ export default function Home() {
       </header>
       <main className="mt-16 flex flex-col items-center">
         <ShuffleHero />
-
       </main>
     </>
   );
