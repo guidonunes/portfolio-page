@@ -15,7 +15,9 @@ i18next
           greeting: "Hi, I'm Guilherme",
           subtitle: "A Full Stack Developer based in Brazil",
           buttonText: "Find out more",
-          tagline: "1% better every day"
+          tagline: "1% better every day",
+          about: "About me",
+          aboutText: "I am an organized professional driven by challenges, passionate about creating impactful and visually engaging applications. My web development journey blends technical expertise with a touch of creativity, bringing ideas to life in meaningful ways."
         }
       },
       pt: {
@@ -27,7 +29,10 @@ i18next
           greeting: "Olá, eu sou Guilherme",
           subtitle: "Desenvolvedor Full Stack do Brasil",
           buttonText: "Saiba mais",
-          tagline: "1% melhor todos os dias"
+          tagline: "1% melhor todos os dias",
+          about: "Sobre mim",
+          aboutText: "Sou um profissional organizado, movido por desafios, apaixonado por criar aplicações impactantes e visualmente envolventes. Minha jornada no desenvolvimento web combina expertise técnica com um toque de criatividade, dando vida a ideias de forma significativa."
+
         }
       },
       de: {
@@ -39,7 +44,9 @@ i18next
           greeting: "Hallo, ich bin Guilherme",
           subtitle: "Ein Full Stack Entwickler aus Brasilien",
           buttonText: "Erfahre mehr",
-          tagline: "1% besser jeden Tag"
+          tagline: "1% besser jeden Tag",
+          about: "Über mich",
+          aboutText: "Ich bin ein organisierter Profi, der von Herausforderungen angetrieben wird und leidenschaftlich daran interessiert ist, wirkungsvolle und visuell ansprechende Apps zu schaffen. Meine Reise in der Webentwicklung verbindet technische Expertise mit einer kreativen Note, um Ideen auf bedeutungsvolle Weise zum Leben zu erwecken."
         }
       }
     },

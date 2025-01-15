@@ -1,16 +1,23 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
+
 const About = () => {
+
+  const {t} = useTranslation();
+
   return (
     <section
-      className="relative py-12 px-6 w-full "
+      className="relative py-16 my-16 px-6 w-full "
     >
       {/* Centralized Header */}
       <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-gray-200 mb-6">
-        About Me
+      {t("about")}
       </h1>
 
       {/* Centralized Bio Text */}
       <p className="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
-        I am an organized professional driven by challenges, passionate about building impactful and visually appealing applications. My journey in web development combines technical expertise with a creative touch.
+        {t("aboutText")}
       </p>
 
       {/* Grid Container */}
