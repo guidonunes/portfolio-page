@@ -136,7 +136,7 @@ export const Header = () => {
 
                 <div className="relative">
                   <button
-                    className="flex items-center p-2 px-3 border rounded-lg text-gray-500 dark:text-gray-300 text-sm"
+                    className="flex items-center p-2 px-3 border rounded-lg text-gray-500 dark:text-gray-300 text-sm "
                     onClick={toggleDropdown} // Use toggleDropdown to show/hide the dropdown
                   >
                     <Image
@@ -162,7 +162,7 @@ export const Header = () => {
 
                   {/* Dropdown menu */}
                   {isDropdownOpen && ( // Show dropdown only if it's open
-                    <div className="absolute top-full left-0 right-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg mt-2">
+                    <div className="absolute top-full left-0 right-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg mt-2 ">
                       <div
                         className="flex items-center p-2 cursor-pointer hover:bg-gray-100  text-gray-500 text-sm"
                         onClick={() => handleLanguageChange("pt")}

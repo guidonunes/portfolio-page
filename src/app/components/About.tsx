@@ -21,35 +21,44 @@ const About = () => {
       </p>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center max-w-6xl mx-auto pt-8">
         {/* Left Column: Skills */}
         <div className="text-center md:text-left">
-          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
             Skills
           </h2>
           <ul className="list-disc list-inside space-y-2">
-            <li className="text-gray-600 dark:text-gray-300">Frontend Development</li>
-            <li className="text-gray-600 dark:text-gray-300">Backend Development</li>
+            <li className="text-gray-600 dark:text-gray-300 list-none">I am an organized professional driven by challenges, passionate about creating impactful and visually engaging applications.</li>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6 py-6">
+            Skills
+          </h2>
+            <li className="text-gray-600 dark:text-gray-300 list-none">I am an organized professional driven by challenges, passionate about creating impactful and visually engaging applications.</li>
           </ul>
         </div>
 
         {/* Center Column: Picture */}
         <div className="flex justify-center">
+
           <img
             src="/assets/untitled.png"
             alt="Your Photo"
             className="w-40 h-40 rounded-full object-cover border-4 border-gray-300 dark:border-gray-700 shadow-lg"
           />
+
         </div>
 
         {/* Right Column: Skills */}
         <div className="text-center md:text-right">
-          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
             Skills
           </h2>
+
           <ul className="list-disc list-inside space-y-2">
-            <li className="text-gray-600 dark:text-gray-300">React Development</li>
-            <li className="text-gray-600 dark:text-gray-300">Ruby on Rails</li>
+            <li className="text-gray-600 dark:text-gray-300 list-none">I am an organized professional driven by challenges, passionate about creating impactful and visually engaging applications.</li>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 py-6">
+            Skills
+          </h2>
+            <li className="text-gray-600 dark:text-gray-300 list-none">I am an organized professional driven by challenges, passionate about creating impactful and visually engaging applications.</li>
           </ul>
         </div>
       </div>
