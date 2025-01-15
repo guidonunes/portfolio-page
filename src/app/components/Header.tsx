@@ -33,7 +33,7 @@ export const Header = () => {
 
   return (
     <div>
-      <nav className="fixed top-0  w-full  z-50 flicker-in-1">
+      <nav className="fixed top-0  w-full  z-50 flicker-in-1 backdrop-filter backdrop-blur-lg bg-opacity-30">
         <div className="container mx-auto">
           <div className="w-full flex flex-col lg:flex-row">
             <div className="flex justify-between lg:flex-row mx-8">
@@ -90,7 +90,7 @@ export const Header = () => {
                     href="javascript:;"
                     className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-orange-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                   >
-                    {t("aboutUs")}
+                    {t("about")}
                   </a>
                 </li>
                 <li>
