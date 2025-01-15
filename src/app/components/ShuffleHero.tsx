@@ -10,7 +10,7 @@ const ShuffleHero = () => {
 
   return (
     <section
-      className="relative h-screen w-full items-center justify-center px-4 dark:bg-gray-800 pt-16">
+      className="relative h-screen w-full items-center justify-center px-4 pt-16">
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-6 max-w-6xl mx-auto text-black dark:text-gray-200 pt-16">
         <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <span className="block mb-3 text-xs md:text-sm text-indigo-700 dark:text-orange-500 font-medium bounce-in-top">
@@ -30,7 +30,7 @@ const ShuffleHero = () => {
       </div>
 
       {/* Dark theme background */}
-      <div className="absolute inset-0 -z-99 h-full w-full px-5 py-24 dark:bg-gradient-to-br dark:from-slate-950 dark:to-slate-600 "></div>
+      <div className="absolute inset-0 -z-99 h-full w-full px-5 py-24  "></div>
     </section>
   );
 };

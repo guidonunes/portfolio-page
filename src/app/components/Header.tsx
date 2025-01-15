@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { useTheme } from "../theme-context";
 import "../animations.css";
 
 export const Header = () => {
@@ -12,7 +13,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [language, setLanguage] = useState("en");
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDarkMode, toggleTheme } = useTheme();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -28,22 +29,11 @@ export const Header = () => {
     setIsDropdownOpen(false);
   };
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
 
-  useEffect(() => {
-    const root = document.documentElement;
-    if (isDarkMode) {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-  }, [isDarkMode]);
 
   return (
     <div>
-      <nav className="fixed top-0  w-full dark:bg-gray-900  z-50 flicker-in-1">
+      <nav className="fixed top-0  w-full  z-50 flicker-in-1">
         <div className="container mx-auto">
           <div className="w-full flex flex-col lg:flex-row">
             <div className="flex justify-between lg:flex-row mx-8">
@@ -193,7 +183,7 @@ export const Header = () => {
 
                 <li>
                   <button
-                    className="p-3 rounded-lg bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-white"
+                    className="p-3 rounded-lg text-black dark:text-white border border-gray-200"
                     onClick={toggleTheme}
                   >
                     {isDarkMode ? <FaSun /> : <FaMoon />}
