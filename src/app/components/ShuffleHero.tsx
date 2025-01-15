@@ -22,7 +22,7 @@ const ShuffleHero = () => {
           <h5 className="text-2xl sm:text-xl md:text-2xl text-slate-700 dark:text-gray-300 my-3 md:my-5 pb-4 bounce-in-bottom">
             {t("subtitle")}
           </h5>
-          <button className="bg-indigo-700 dark:bg-orange-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 dark:hover:bg-orange-800 active:scale-95 mb-4 ">
+          <button className="bg-indigo-700 dark:bg-orange-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 dark:hover:bg-orange-800 active:scale-95 mb-12 ">
             {t("buttonText")}
           </button>
         </div>

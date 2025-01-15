@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <section
-      className="relative py-16 my-16 px-6 w-full "
+      className="relative py-12 px-6 w-full "
     >
       {/* Centralized Header */}
       <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-gray-200 mb-6">

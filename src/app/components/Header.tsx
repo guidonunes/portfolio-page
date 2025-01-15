@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
@@ -14,6 +14,8 @@ export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [language, setLanguage] = useState("en");
   const { isDarkMode, toggleTheme } = useTheme();
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -29,11 +31,33 @@ export const Header = () => {
     setIsDropdownOpen(false);
   };
 
+  let lastScrollY = 0;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        setIsScrollingDown(true); // Scrolling down
+      } else {
+        setIsScrollingDown(false); // Scrolling up
+      }
+      lastScrollY = currentScrollY; // Update the ref value
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
 
   return (
     <div>
-      <nav className="fixed top-0  w-full  z-50 flicker-in-1 backdrop-filter backdrop-blur-lg bg-opacity-30">
+      <nav className= {`fixed top-0  w-full  z-50 flicker-in-1 backdrop-filter backdrop-blur-lg bg-opacity-30 mb-16
+          ${isScrollingDown ? "-translate-y-full" : "translate-y-0"}
+        `}>
         <div className="container mx-auto">
           <div className="w-full flex flex-col lg:flex-row">
             <div className="flex justify-between lg:flex-row mx-8">
