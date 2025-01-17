@@ -35,7 +35,7 @@ const ShuffleHero = () => {
   );
 };
 
-const shuffle = (array) => {
+const shuffle = (array: { id: number; src: string }[]) => {
   let currentIndex = array.length,
     randomIndex;
 
