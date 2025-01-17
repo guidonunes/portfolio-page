@@ -10,9 +10,10 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative py-12 px-6 w-full ">
+    <section className="relative px-6 w-full py-24">
+
       {/* Centralized Header */}
-      <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-gray-200 mb-6">
+      <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold text-center text-gray-800 dark:text-gray-200 mb-6">
         {t("about")}
       </h1>
 
@@ -61,7 +62,7 @@ const About = () => {
         {/* Right Column: Skills */}
         <div className="text-center md:text-right">
           <h2 className="flex items-center text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
-            <LiaToolsSolid className="mr-2" /> Full-Stack Web Development
+            <LiaToolsSolid className="mr-2" /> Full-Stack Development
           </h2>
 
           <ul className="list-disc list-inside space-y-2">

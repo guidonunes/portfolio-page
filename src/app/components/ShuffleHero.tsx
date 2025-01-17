@@ -10,10 +10,10 @@ const ShuffleHero = () => {
 
   return (
     <section
-      className="relative h-screen w-full items-center justify-center px-4 py-16">
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-6 max-w-6xl mx-auto text-black dark:text-gray-200 pt-16">
+      className="relative h-screen w-full items-center justify-center px-4 py-20">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-6 max-w-6xl mx-auto text-black dark:text-gray-200 pt-16 ">
         <div className="text-center md:text-left flex flex-col items-center md:items-start">
-          <span className="block mb-3 text-xs md:text-sm text-indigo-700 dark:text-indigo-700 font-medium bounce-in-top">
+          <span className="block mb-3 text-xs md:text-sm text-indigo-700 dark:text-indigo-500 font-medium bounce-in-top">
             {t("tagline")}
           </span>
           <h3 className="text-4xl sm:text-5xl md:text-5xl font-semibold leading-tight bounce-in-left">
@@ -22,7 +22,7 @@ const ShuffleHero = () => {
           <h5 className="text-2xl sm:text-xl md:text-2xl text-slate-700 dark:text-gray-300 my-3 md:my-5 pb-4 bounce-in-bottom">
             {t("subtitle")}
           </h5>
-          <button className="bg-indigo-700 dark:bg-indigo-700 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 dark:hover:bg-indigo-600 active:scale-95 mb-12 ">
+          <button className="bg-indigo-700 dark:bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 dark:hover:bg-indigo-200 active:scale-95 mb-12 ">
             {t("buttonText")}
           </button>
         </div>
@@ -39,7 +39,7 @@ const shuffle = (array) => {
   let currentIndex = array.length,
     randomIndex;
 
-  while (currentIndex !== 0) {
+  while (currentIndex != 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
@@ -103,10 +103,11 @@ const ShuffleGrid = () => {
   };
 
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 grid-rows-4 sm:h-[600px] h-[400px] gap-1">
+    <div className="grid grid-cols-3 grid-rows-3 h-[550px] gap-1 ">
       {squares.map((sq) => sq)}
     </div>
   );
+
 };
 
 export default ShuffleHero;
