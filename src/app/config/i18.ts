@@ -20,11 +20,12 @@ i18next
           backendHeader: "Back-End Development",
           backendText:"Proficient in building robust and scalable backend systems, specializing in Ruby on Rails, Node.js, and API development.",
           frontendHeader: "Front-End Development",
-          frontendText: "  Experienced in crafting responsive and user-friendly interfaces, with expertise in React, TypeScript, and modern UI/UX design principles.",
+          frontendText: "Experienced in crafting responsive and user-friendly interfaces, with expertise in React, TypeScript, and modern UI/UX design principles.",
           fsHeader: "Full-Stack Development",
           fsText: "Skilled in full-stack development, with expertise in backend systems and frontend design, honed through the intensive Le Wagon bootcamp.",
           clHeader: "Continuous Learning",
           clText: "Passionate about continuous learning, currently enrolled at FIAP Faculty to study Analysis and System Development, furthering my expertise in the tech field."
+        }
       },
       pt: {
         translation: {
@@ -46,7 +47,6 @@ i18next
           clHeader: "Aprendizado Contínuo",
           clText: "Apaixonado por aprendizado contínuo, atualmente matriculado na FIAP para estudar Análise e Desenvolvimento de Sistemas, aprimorando minha expertise na área de tecnologia."
         }
-      },
       },
       de: {
         translation: {
