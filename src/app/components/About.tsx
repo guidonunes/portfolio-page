@@ -10,7 +10,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative px-6 w-full py-24">
+    <section className="relative px-6 w-full py-24" id="about">
 
       {/* Centralized Header */}
       <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold text-center text-gray-800 dark:text-gray-200 mb-6">
@@ -27,20 +27,17 @@ const About = () => {
         {/* Left Column: Skills */}
         <div className="text-center md:text-left">
           <h2 className="flex items-center text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
-            Back-End Development <VscWorkspaceTrusted className="ml-2" />
+            {t("backendHeader")} <VscWorkspaceTrusted className="ml-2" />
           </h2>
           <ul className="list-disc list-inside space-y-2">
             <li className="text-gray-600 dark:text-gray-300 list-none text-justify">
-              Proficient in building robust and scalable backend systems,
-              specializing in Ruby on Rails, Node.js, and API development.
+              {t("backendText")}
             </li>
             <h2 className="flex items-center text-2xl font-semibold text-gray-800 dark:text-gray-200 py-6">
-              Front-End Development <PiPaintBrushBroadLight className="ml-2" />
+              {t("frontendHeader")} <PiPaintBrushBroadLight className="ml-2" />
             </h2>
             <li className="text-gray-600 dark:text-gray-300 list-none text-justify">
-              Experienced in crafting responsive and user-friendly interfaces,
-              with expertise in React, TypeScript, and modern UI/UX design
-              principles.
+              {t("frontendText")}
             </li>
           </ul>
         </div>
@@ -62,23 +59,19 @@ const About = () => {
         {/* Right Column: Skills */}
         <div className="text-center md:text-right">
           <h2 className="flex items-center text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
-            <LiaToolsSolid className="mr-2" /> Full-Stack Development
+            <LiaToolsSolid className="mr-2" /> {t("fsHeader")}
           </h2>
 
           <ul className="list-disc list-inside space-y-2">
             <li className="text-gray-600 dark:text-gray-300 list-none text-justify">
               {" "}
-              Skilled in full-stack development, with expertise in backend
-              systems and frontend design, honed through the intensive Le Wagon
-              bootcamp.
+              {t("fsText")}
             </li>
             <h2 className="flex items-center text-2xl font-semibold text-gray-800 dark:text-gray-200 py-6 ">
-              <PiLightbulbThin className="mr-2" /> Continuous Learning
+              <PiLightbulbThin className="mr-2" /> {t("clHeader")}
             </h2>
             <li className="text-gray-600 dark:text-gray-300 list-none text-justify">
-              Passionate about continuous learning, currently enrolled at FIAP
-              Faculty to study Analysis and System Development, furthering my
-              expertise in the tech field.
+              {t("clText")}
             </li>
           </ul>
         </div>

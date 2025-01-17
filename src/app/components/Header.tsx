@@ -111,7 +111,7 @@ export const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="javascript:;"
+                    href="#about"
                     className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-orange-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                   >
                     {t("about")}
