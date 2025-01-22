@@ -1,6 +1,7 @@
 import { Header } from "./components/Header";
 import ShuffleHero from "./components/ShuffleHero";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
@@ -20,6 +21,11 @@ export default function Home() {
         {/* About Section */}
         <section className="flex flex-col items-center py-24">
           <About />
+        </section>
+
+        {/* Projects Section */}
+        <section>
+          <Projects />
         </section>
       </main>
     </>
