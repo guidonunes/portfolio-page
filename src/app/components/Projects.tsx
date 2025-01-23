@@ -21,8 +21,19 @@ const Projects = () => {
   ];
 
   return (
+    <div className="projects-section min-h-screen flex flex-col items-center  px-4 sm:px-6 md:px-8 lg:px-12">
+      {/* Header and short text */}
+      <header className="text-center mb-8 sm:mb-12 pt-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-200">
+          Featured Projects
+        </h1>
+        <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          Explore some of our recent projects showcasing innovative designs and exceptional functionality.
+          Click on the cards to learn more about each project.
+        </p>
+      </header>
 
-    <div className="projects-section min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-16">
+      {/* Carousel */}
       <Carousel slides={projectSlides} />
     </div>
   );
