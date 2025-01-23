@@ -6,22 +6,22 @@ const Projects = () => {
     {
       title: "Project One",
       button: "View Details",
-      src: "/images/project1.jpg", // Replace with your actual image paths
+      src: "/assets/test.jpg", // Replace with your actual image paths
     },
     {
       title: "Project Two",
       button: "View Details",
-      src: "/images/project2.jpg",
+      src: "/assets/test.jpg",
     },
     {
       title: "Project Three",
       button: "View Details",
-      src: "/images/project3.jpg",
+      src: "/assets/test.jpg",
     },
   ];
 
   return (
-    <div className="projects-section min-h-screen flex flex-col items-center  px-4 sm:px-6 md:px-8 lg:px-12">
+    <div className="projects-section min-h-screen w-full overflow-x-hidden flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-12 pb-24 sm:pb-28 md:pb-32">
       {/* Header and short text */}
       <header className="text-center mb-8 sm:mb-12 pt-12">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-200">
@@ -34,7 +34,9 @@ const Projects = () => {
       </header>
 
       {/* Carousel */}
-      <Carousel slides={projectSlides} />
+      <div className="w-full max-w-full overflow-hidden">
+        <Carousel slides={projectSlides} />
+      </div>
     </div>
   );
 };

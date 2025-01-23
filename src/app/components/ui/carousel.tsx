@@ -65,65 +65,71 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
   const { src, button, title } = slide;
 
   return (
-    <PinContainer
-      title={title}
-      href="#"
-      containerClassName="mx-[4vmin] w-[70vmin] h-[70vmin]"
-    >
-      <li
-        ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out z-10"
-        onClick={() => handleSlideClick(index)}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          transform:
-            current !== index
-              ? "scale(0.98) rotateX(8deg)"
-              : "scale(1) rotateX(0deg)",
-          transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
-          transformOrigin: "bottom",
-        }}
+    <div className="w-full overflow-x-hidden pb-12 sm:pb-16 md:pb-20">
+      <PinContainer
+        title={title}
+        href="#"
+        containerClassName="mx-auto w-full max-w-[100vw] h-[55vmin] md:h-[60vmin] overflow-hidden" // Ensure the width is constrained
       >
-        <div
-          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
+        <li
+          ref={slideRef}
+          className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out z-10
+            h-[320px] w-[230px] sm:h-[370px] sm:w-[270px] md:h-[430px] md:w-[330px] pt-20 sm:pt-24 md:pt-28"
+          onClick={() => handleSlideClick(index)}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
           style={{
             transform:
-              current === index
-                ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)"
-                : "none",
+              current !== index
+                ? "scale(0.98) rotateX(8deg)"
+                : "scale(1) rotateX(0deg)",
+            transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+            transformOrigin: "bottom",
           }}
         >
-          <img
-            className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+          <div
+            className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
             style={{
-              opacity: current === index ? 1 : 0.5,
+              transform:
+                current === index
+                  ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)"
+                  : "none",
             }}
-            alt={title}
-            src={src}
-            onLoad={imageLoaded}
-            loading="eager"
-            decoding="sync"
-          />
-          {current === index && (
-            <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
-          )}
-        </div>
+          >
+            <img
+              className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+              style={{
+                opacity: current === index ? 1 : 0.5,
+              }}
+              alt={title}
+              src={src}
+              onLoad={imageLoaded}
+              loading="eager"
+              decoding="sync"
+            />
+            {current === index && (
+              <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
+            )}
+          </div>
 
-        <article
-          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
-            current === index ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <h2 className="text-lg font-bold">{title}</h2>
-          <button className="mt-4 px-4 py-2 bg-blue-500 rounded-lg text-white">
-            {button}
-          </button>
-        </article>
-      </li>
-    </PinContainer>
+          <article
+            className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
+              current === index ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <h2 className="text-base sm:text-lg font-bold">{title}</h2>
+            <button className="mt-6 px-3 py-2 sm:px-4 sm:py-2 bg-blue-500 rounded-lg text-white text-sm sm:text-base">
+              {button}
+            </button>
+          </article>
+        </li>
+      </PinContainer>
+      <div className="mt-12 md:mt-16">
+        {/* Extra space below the cards */}
+      </div>
+    </div>
   );
-};
+}
 
 interface CarouselControlProps {
   type: string;
