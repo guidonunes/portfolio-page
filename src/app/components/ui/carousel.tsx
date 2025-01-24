@@ -65,16 +65,16 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
   const { src, button, title } = slide;
 
   return (
-    <div className="w-full overflow-x-hidden pb-12 sm:pb-16 md:pb-20">
+    <div className="w-full overflow-x-hidden pb-8 sm:pb-12 md:pb-16">
       <PinContainer
         title={title}
         href="#"
-        containerClassName="mx-auto w-full max-w-[100vw] h-[55vmin] md:h-[60vmin] overflow-hidden" // Ensure the width is constrained
+        containerClassName="mx-auto w-full max-w-[100vw] h-[40vmin] sm:h-[50vmin] md:h-[60vmin] overflow-hidden"
       >
         <li
           ref={slideRef}
           className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out z-10
-            h-[320px] w-[230px] sm:h-[370px] sm:w-[270px] md:h-[430px] md:w-[330px] pt-20 sm:pt-24 md:pt-28"
+            h-[200px] w-[150px] sm:h-[250px] sm:w-[200px] md:h-[320px] md:w-[230px] lg:h-[370px] lg:w-[270px] xl:h-[430px] xl:w-[330px] pt-12 sm:pt-16 md:pt-20"
           onClick={() => handleSlideClick(index)}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
@@ -117,14 +117,14 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
               current === index ? "opacity-100" : "opacity-0"
             }`}
           >
-            <h2 className="text-base sm:text-lg font-bold">{title}</h2>
-            <button className="mt-6 px-3 py-2 sm:px-4 sm:py-2 bg-blue-500 rounded-lg text-white text-sm sm:text-base">
+            <h2 className="text-sm sm:text-base md:text-lg font-bold">{title}</h2>
+            <button className="mt-4 px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 bg-blue-500 rounded-lg text-white text-xs sm:text-sm md:text-base">
               {button}
             </button>
           </article>
         </li>
       </PinContainer>
-      <div className="mt-12 md:mt-16">
+      <div className="mt-8 sm:mt-12 md:mt-16">
         {/* Extra space below the cards */}
       </div>
     </div>
@@ -140,13 +140,13 @@ interface CarouselControlProps {
 const CarouselControl = ({ type, title, handleClick }: CarouselControlProps) => {
   return (
     <button
-      className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-3 border-transparent rounded-full focus:border-[#6D64F7] focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
+      className={`w-8 h-8 sm:w-10 sm:h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-3 border-transparent rounded-full focus:border-[#6D64F7] focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
         type === "previous" ? "rotate-180" : ""
       }`}
       title={title}
       onClick={handleClick}
     >
-      <IconArrowNarrowRight className="text-neutral-600 dark:text-neutral-200" />
+      <IconArrowNarrowRight className="text-neutral-600 dark:text-neutral-200 w-4 h-4 sm:w-5 sm:h-5" />
     </button>
   );
 };
@@ -178,7 +178,7 @@ export function Carousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative w-[70vmin] h-[70vmin] mx-auto"
+      className="relative w-[90vmin] sm:w-[80vmin] md:w-[70vmin] h-[50vmin] sm:h-[60vmin] md:h-[70vmin] mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul

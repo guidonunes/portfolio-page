@@ -1,7 +1,7 @@
 import { Header } from "./components/Header";
 import ShuffleHero from "./components/ShuffleHero";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import RecentProjects from "./components/RecentProjects";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
 
         {/* Projects Section */}
         <section>
-          <Projects />
+          <RecentProjects />
         </section>
       </main>
     </>
