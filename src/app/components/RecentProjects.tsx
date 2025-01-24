@@ -89,7 +89,7 @@ const RecentProjects = () => {
                     <p className="flex lg:text-xl md:text-xs">Github</p>
                     <FaLocationArrow
                       className="ms-3 text-sm  text-black dark:text-gray-200"
-                      color="#CBACF9"
+
                     />
                   </div>
                 </div>
