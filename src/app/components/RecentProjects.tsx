@@ -9,7 +9,7 @@ const RecentProjects = () => {
       id: 1,
       title: "Portfolio Pilot",
       des: "Description for Project One. This project showcases innovative design and functionality.",
-      img: "/assets/project1.jpg", // Replace with actual image path
+      img: "/assets/pilot.png", // Replace with actual image path
       iconLists: ["/assets/rails.svg", "/assets/ruby.svg", "/assets/js.svg","/assets/postgres.svg", "/assets/sass.svg", "/assets/heroku.svg"], // Replace with actual icon paths
       link: "https://project1.com", // Replace with actual link
     },
@@ -48,16 +48,11 @@ const RecentProjects = () => {
                 <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                   <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]"></div>
                   <div>
-                    <img
-                      src="/bg.png"
-                      alt="bg-img"
-                      className="w-full h-full object-cover"
-                    />
                   </div>
                   <img
                     src={img}
                     alt={title}
-                    className="z-10 absolute bottom-0 w-full h-full object-cover opacity-70"
+                    className="z-10 absolute bottom-0 w-full h-full object-cover opacity-90 rounded-2xl"
                   />
                 </div>
                 <h2 className="font-bold lg:2xl md:text-xl text-base line-clamp-1">
