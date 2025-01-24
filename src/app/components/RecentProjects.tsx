@@ -17,7 +17,7 @@ const RecentProjects = () => {
       id: 2,
       title: "Fictional E-Commerce",
       des: "Description for Project Two. This project highlights exceptional user experience and performance.",
-      img: "/assets/project2.jpg", // Replace with actual image path
+      img: "/assets/silk.png", // Replace with actual image path
       iconLists: ["/assets/rails.svg", "/assets/ruby.svg", "/assets/js.svg","/assets/postgres.svg", "/assets/sass.svg", "/assets/heroku.svg"], // Replace with actual icon paths
       link: "https://project2.com", // Replace with actual link
     },
