@@ -48,3 +48,29 @@ body.dark .hero-section .bg-indigo-700 {
 body.dark .hero-section .bg-indigo-700:hover {
   background-color: #3700b3; /* Darker hover state for the button */
 }
+
+
+.rowdies-light {
+  font-family: "Rowdies", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rowdies-regular {
+  font-family: "Rowdies", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rowdies-bold {
+  font-family: "Rowdies", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.league-spartan-bold {
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}

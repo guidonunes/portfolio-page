@@ -103,7 +103,7 @@ export const Header = () => {
               <ul className="flex items-center flex-col mt-4 lg:mt-0 lg:ml-auto lg:flex-row gap-4">
                 <li>
                   <a
-                    href="javascript:;"
+                    href="#home"
                     className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-orange-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                   >
                     {t("home")}
@@ -119,7 +119,7 @@ export const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="javascript:;"
+                    href="#projects"
                     className="flex items-center justify-between text-gray-500 dark:text-gray-300 text-sm lg:text-base font-medium hover:text-indigo-700 dark:hover:text-orange-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                   >
                     {t("projects")}
