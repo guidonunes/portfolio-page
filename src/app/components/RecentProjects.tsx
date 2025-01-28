@@ -8,7 +8,7 @@ const RecentProjects = () => {
     {
       id: 1,
       title: "Portfolio Pilot",
-      des: "Description for Project One. This project showcases innovative design and functionality.",
+      des: "A stocks and crypto portfolio tracker developed during the Le Wagon bootcamp.",
       img: "/assets/pilot.png", // Replace with actual image path
       iconLists: ["/assets/rails.svg", "/assets/ruby.svg", "/assets/js.svg","/assets/postgres.svg", "/assets/sass.svg", "/assets/heroku.svg"], // Replace with actual icon paths
       link: "https://project1.com", // Replace with actual link
@@ -16,17 +16,17 @@ const RecentProjects = () => {
     {
       id: 2,
       title: "Fictional E-Commerce",
-      des: "Description for Project Two. This project highlights exceptional user experience and performance.",
+      des: "A marketplace prototype developed during the Le Wagon bootcamp.",
       img: "/assets/silk.png", // Replace with actual image path
       iconLists: ["/assets/rails.svg", "/assets/ruby.svg", "/assets/js.svg","/assets/postgres.svg", "/assets/sass.svg", "/assets/heroku.svg"], // Replace with actual icon paths
       link: "https://project2.com", // Replace with actual link
     },
     {
       id: 3,
-      title: "Project Three",
-      des: "Description for Project Three. This project demonstrates cutting-edge technology and creativity.",
-      img: "/assets/project3.jpg", // Replace with actual image path
-      iconLists: ["/icons/javascript.svg", "/icons/css.svg", "/icons/html.svg"], // Replace with actual icon paths
+      title: "Todo App",
+      des: "Final project for the React and Redux Skill Path on Codecademy.",
+      img: "/assets/react-redux.png", // Replace with actual image path
+      iconLists: ["/assets/rea.svg", "/assets/redux.svg", "/assets/js.svg", "/assets/sass.svg", "/assets/netlify.svg"], // Replace with actual icon paths
       link: "https://project3.com", // Replace with actual link
     },
   ];
