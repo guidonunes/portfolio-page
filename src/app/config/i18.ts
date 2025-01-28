@@ -24,7 +24,12 @@ i18next
           fsHeader: "Full-Stack Development",
           fsText: "Skilled in full-stack development, with expertise in backend systems and frontend design, honed through the intensive Le Wagon bootcamp.",
           clHeader: "Continuous Learning",
-          clText: "Passionate about continuous learning, currently enrolled at FIAP Faculty to study Analysis and System Development, furthering my expertise in the tech field."
+          clText: "Passionate about continuous learning, currently enrolled at FIAP Faculty to study Analysis and System Development, furthering my expertise in the tech field.",
+          projectHeader: "A Small Selection of Recent Projects",
+          projectDescription1:"A stocks and crypto portfolio tracker developed during the Le Wagon bootcamp.",
+          projectTitle2: "Fictional E-Commerce",
+          projectDescription2: "A fictional e-commerce platform developed during the Le Wagon bootcamp.",
+          projectDescription3: "Final project for the React and Redux Skill Path on Codecademy."
         }
       },
       pt: {
@@ -45,7 +50,12 @@ i18next
           fsHeader: "Desenvolvimento Full-Stack",
           fsText: "Proficiência em desenvolvimento full-stack, com expertise em sistemas backend e design frontend, aprimorada durante o intensivo bootcamp do Le Wagon.",
           clHeader: "Aprendizado Contínuo",
-          clText: "Apaixonado por aprendizado contínuo, atualmente matriculado na FIAP para estudar Análise e Desenvolvimento de Sistemas, aprimorando minha expertise na área de tecnologia."
+          clText: "Apaixonado por aprendizado contínuo, atualmente matriculado na FIAP para estudar Análise e Desenvolvimento de Sistemas, aprimorando minha expertise na área de tecnologia.",
+          projectHeader: "Uma Pequena Seleção de Projetos Recentes",
+          projectDescription1: "Portfólio tracker de ações e cripto desenvolvido durante o bootcamp do Le Wagon.",
+          projectTitle2: "E-Commerce Fictício",
+          projectDescription2: "Plataforma de e-commerce fictícia desenvolvida durante o bootcamp do Le Wagon",
+          projectDescription3: "Projeto final do Skill Path de React e Redux na Codecademy."
         }
       },
       de: {
@@ -66,7 +76,12 @@ i18next
           fsHeader: "Full-Stack-Entwicklung",
           fsText: "Erfahren in der Full-Stack-Entwicklung, mit Expertise in Backend-Systemen und Front-End-Design, verfeinert durch das intensive Le Wagon Bootcamp.",
           clHeader: "Kontinuierliches Lernen",
-          clText: "Leidenschaftlich in Bezug auf kontinuierliches Lernen, derzeit eingeschrieben an der FIAP Fakultät, um Analyse und Systementwicklung zu studieren und meine Expertise im Technologiebereich weiter auszubauen."
+          clText: "Leidenschaftlich in Bezug auf kontinuierliches Lernen, derzeit eingeschrieben an der FIAP Fakultät, um Analyse und Systementwicklung zu studieren und meine Expertise im Technologiebereich weiter auszubauen.",
+          projectHeader:"Eine kleine Auswahl an aktuellen Projekten",
+          projectDescription1:"Aktien- und Krypto-Portfolio-Tracker, entwickelt während des Le Wagon Bootcamps.",
+          projectTitle2:"Fiktiver E-Commerce",
+          projectDescription2:"Fiktive E-Commerce-Plattform, entwickelt während des Le Wagon Bootcamps.",
+          projectDescription3:"Abschlussprojekt für den React- und Redux-Skill-Path auf Codecademy."
         }
       }
     },

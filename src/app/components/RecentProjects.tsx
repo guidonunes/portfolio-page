@@ -1,22 +1,27 @@
+"use client";
+
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from 'react-icons/fa';
+import { useTranslation } from "react-i18next";
 
 const RecentProjects = () => {
-  // Define project data directly in the component
+
+  const { t } = useTranslation();
+
   const projects = [
     {
       id: 1,
       title: "Portfolio Pilot",
-      des: "A stocks and crypto portfolio tracker developed during the Le Wagon bootcamp.",
+      des: t("projectDescription1"),
       img: "/assets/pilot.png", // Replace with actual image path
       iconLists: ["/assets/rails.svg", "/assets/ruby.svg", "/assets/js.svg","/assets/postgres.svg", "/assets/sass.svg", "/assets/heroku.svg"], // Replace with actual icon paths
       link: "https://project1.com", // Replace with actual link
     },
     {
       id: 2,
-      title: "Fictional E-Commerce",
-      des: "A marketplace prototype developed during the Le Wagon bootcamp.",
+      title: t("projectTitle2"),
+      des: t("projectDescription2"),
       img: "/assets/silk.png", // Replace with actual image path
       iconLists: ["/assets/rails.svg", "/assets/ruby.svg", "/assets/js.svg","/assets/postgres.svg", "/assets/sass.svg", "/assets/heroku.svg"], // Replace with actual icon paths
       link: "https://project2.com", // Replace with actual link
@@ -24,7 +29,7 @@ const RecentProjects = () => {
     {
       id: 3,
       title: "Todo App",
-      des: "Final project for the React and Redux Skill Path on Codecademy.",
+      des: t("projectDescription3"),
       img: "/assets/react-redux.png", // Replace with actual image path
       iconLists: ["/assets/rea.svg", "/assets/redux.svg", "/assets/js.svg", "/assets/sass.svg", "/assets/netlify.svg"], // Replace with actual icon paths
       link: "https://project3.com", // Replace with actual link
@@ -35,7 +40,7 @@ const RecentProjects = () => {
     <div id="projects">
       {/* Centered h1 with color scheme */}
       <h1 className="text-4xl sm:text-5xl md:text-5xl font-semibold leading-tight text-center text-black dark:text-gray-200 py-16">
-        A Small Selection of Recent Projects
+        {t("projectHeader")}
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-10 gap-y-24 md:gap-y-2 mt-10  text-black dark:text-gray-200">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
