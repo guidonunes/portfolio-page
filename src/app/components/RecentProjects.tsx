@@ -14,25 +14,25 @@ const RecentProjects = () => {
       id: 1,
       title: "Portfolio Pilot",
       des: t("projectDescription1"),
-      img: "/assets/pilot.png", // Replace with actual image path
+      img: "/assets/pilot.png",
       iconLists: ["/assets/rails.svg", "/assets/ruby.svg", "/assets/js.svg","/assets/postgres.svg", "/assets/sass.svg", "/assets/heroku.svg"], // Replace with actual icon paths
-      link: "https://project1.com", // Replace with actual link
+      link: "https://github.com/guidonunes/portfolio-pilot-rails",
     },
     {
       id: 2,
       title: t("projectTitle2"),
       des: t("projectDescription2"),
-      img: "/assets/silk.png", // Replace with actual image path
+      img: "/assets/silk.png",
       iconLists: ["/assets/rails.svg", "/assets/ruby.svg", "/assets/js.svg","/assets/postgres.svg", "/assets/sass.svg", "/assets/heroku.svg"], // Replace with actual icon paths
-      link: "https://project2.com", // Replace with actual link
+      link: "https://github.com/guidonunes/marketplace-project",
     },
     {
       id: 3,
       title: "Todo App",
       des: t("projectDescription3"),
-      img: "/assets/react-redux.png", // Replace with actual image path
+      img: "/assets/react-redux.png",
       iconLists: ["/assets/rea.svg", "/assets/redux.svg", "/assets/js.svg", "/assets/sass.svg", "/assets/netlify.svg"], // Replace with actual icon paths
-      link: "https://project3.com", // Replace with actual link
+      link: "https://journaly-brain-app.netlify.app/",
     },
   ];
 
