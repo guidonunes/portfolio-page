@@ -1,4 +1,8 @@
+"use client";
+
+
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const socialMedia = [
@@ -14,19 +18,21 @@ const Footer = () => {
     },
   ];
 
+  const { t } = useTranslation();
+
   return (
     <footer className="w-full pt-24 pb-16 mt-20 sm:pt-32 sm:pb-20 sm:mt-24 md:pt-44 md:pb-24 md:mt-28  text-black dark:text-gray-200" id="contact">
       {/* Main Content */}
       <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-center">
-          Ready to take your digital presence to the next level?
+          {t("footerTitle")}
         </h1>
-        <p className="text-white-200 mt-5 sm:mt-6 md:mt-10 text-center text-sm sm:text-base md:text-lg">
-          Reach out to me today and let&apos;s discuss how I can help you achieve your goals
+        <p className=" text-gray-600 dark:text-gray-300 max-w-2xl mt-5 sm:mt-6 md:mt-10 text-center text-sm sm:text-base md:text-lg">
+          {t("footerDescription")}
         </p>
         <a href="mailto:guilherme.augd@gmail.com" className="mt-8 sm:mt-10 md:mt-12">
           <button className="bg-indigo-700 dark:bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 dark:hover:bg-indigo-200 active:scale-95">
-            Get in touch
+            {t("footerButton")}
           </button>
         </a>
       </div>
@@ -49,7 +55,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright Text */}
-        <p className="text-xs sm:text-sm md:text-base font-light text-center">
+        <p className=" text-gray-600 dark:text-gray-300 max-w-2xl">
           Copyright © 2025 Guilherme
         </p>
       </div>

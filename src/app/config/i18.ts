@@ -29,7 +29,11 @@ i18next
           projectDescription1:"A stocks and crypto portfolio tracker developed during the Le Wagon bootcamp.",
           projectTitle2: "Fictional E-Commerce",
           projectDescription2: "A fictional e-commerce platform developed during the Le Wagon bootcamp.",
-          projectDescription3: "Final project for the React and Redux Skill Path on Codecademy."
+          projectDescription3: "Final project for the React and Redux Skill Path on Codecademy.",
+          footerTitle: "Ready to take your digital presence to the next level?",
+          footerDescription: "Reach out to me today and let's discuss how I can help you achieve your goals",
+          footerButton: "Get in touch",
+
         }
       },
       pt: {
@@ -55,7 +59,11 @@ i18next
           projectDescription1: "Portfólio tracker de ações e cripto desenvolvido durante o bootcamp do Le Wagon.",
           projectTitle2: "E-Commerce Fictício",
           projectDescription2: "Plataforma de e-commerce fictícia desenvolvida durante o bootcamp do Le Wagon",
-          projectDescription3: "Projeto final do Skill Path de React e Redux na Codecademy."
+          projectDescription3: "Projeto final do Skill Path de React e Redux na Codecademy.",
+          footerTitle: "Pronto para levar sua presença digital para o próximo nível?",
+          footerDescription: "Entre em contato comigo hoje e vamos discutir como posso ajudá-lo a alcançar seus objetivos",
+          footerButton: "Entre em contato",
+
         }
       },
       de: {
@@ -81,7 +89,10 @@ i18next
           projectDescription1:"Aktien- und Krypto-Portfolio-Tracker, entwickelt während des Le Wagon Bootcamps.",
           projectTitle2:"Fiktiver E-Commerce",
           projectDescription2:"Fiktive E-Commerce-Plattform, entwickelt während des Le Wagon Bootcamps.",
-          projectDescription3:"Abschlussprojekt für den React- und Redux-Skill-Path auf Codecademy."
+          projectDescription3:"Abschlussprojekt für den React- und Redux-Skill-Path auf Codecademy.",
+          footerTitle: "Bereit, Ihre digitale Präsenz auf die nächste Stufe zu heben?",
+          footerDescription: "Kontaktieren Sie mich noch heute und lassen Sie uns besprechen, wie ich Ihnen helfen kann, Ihre Ziele zu erreichen.",
+          footerButton: "Kontaktieren Sie mich",
         }
       }
     },
