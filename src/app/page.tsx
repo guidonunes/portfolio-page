@@ -2,6 +2,7 @@ import { Header } from "./components/Header";
 import ShuffleHero from "./components/ShuffleHero";
 import About from "./components/About";
 import RecentProjects from "./components/RecentProjects";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,12 @@ export default function Home() {
         {/* Projects Section */}
         <section>
           <RecentProjects />
+        </section>
+
+        {/* Footer */}
+
+        <section>
+          <Footer />
         </section>
       </main>
     </>
